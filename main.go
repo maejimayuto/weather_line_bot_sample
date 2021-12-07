@@ -11,6 +11,7 @@ import (
 func main() {
 	// LINE Botクライアント生成する
 	// BOT にはチャネルシークレットとチャネルトークンを環境変数から読み込み引数に渡す
+	log.Fatal("start")
 	bot, err := linebot.New(
 		os.Getenv("LINE_BOT_CHANNEL_SECRET"),
 		os.Getenv("LINE_BOT_CHANNEL_TOKEN"),
